@@ -1,0 +1,266 @@
+#rogo {
+  margin: 20px 0 0 70px;
+  float: left;
+}
+#header {
+  overflow: hidden;
+}
+#sarch {
+  float: right;
+  padding: 50px 80px 0 0;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.line{
+  width: 20px;
+  height: 3px;
+  background: black;
+  margin: 3px;
+}
+
+
+
+.sumafo-menu{
+  background: rgba(150, 220, 223);
+  width: 200px;
+  transform: translateX(-250px);
+  position: fixed;
+  z-index: 2;
+  transition: .3s;
+}
+input:checked ~ .sumafo-menu{
+  transform: translateX(0);
+}
+
+/* input[type="checkbox"]:checked ~ nav {
+  position: absolute;
+  left: -50px;
+} */
+.open, .close{
+  display: none;
+}
+.open, .close{
+  display: block;
+}
+.open{
+  position: absolute;
+}
+
+@media screen and (min-width: width 700px){
+  #sumafo{
+    display: none;
+}
+}
+@media(max-width:700px){
+  #contener{
+    display: none;
+  }
+}
+
+
+
+
+
+/* @media screen and(max-width:700px){
+  #menu {
+    width: 100%;
+    padding-top: 50px;
+  }
+}
+
+  #contener {
+    position: absolute;
+    top: -200px;
+    transition: .3s;
+    background: #fff;
+  } */
+  /* input[type="checkbox"]:checked ~ nav {
+    left: 0;
+  } */
+
+  input[type="checkbox"]:checked ~ .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgb(73, 72, 72, .9);
+  }
+
+
+
+#contener ul {
+  margin: 0;
+  padding: 0;
+}
+#menu {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  background: #000;
+}
+#menu > li {
+  width: 25%;
+}
+#menu li{
+  list-style-type: none;
+  position: relative;
+}
+#menu li a {
+  background: #000;
+  border-left: rgb(97, 95, 95) solid 0.5px;
+  text-decoration: none;
+  color: #FFF;
+  text-align: center;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+}
+#menu li ul {
+  padding: 0px;
+  margin: 0px;
+}
+#menu li li{
+  overflow: hidden;
+  height: 0;
+  width: 100%;
+  transition: .3S;
+}
+#menu li :hover {
+  color: green;
+}
+#menu li:hover > ul >li {
+  height: 50px;
+  overflow: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mente {
+  background: yellow;
+  max-width: 100%;
+  text-align: center;
+}
+#mente a {
+  text-decoration: none;
+  color: black;
+}
+#mente :hover {
+  color: #fff;
+  max-width: 100%;
+}
+
+#haikei {
+  height: 500px;
+  font-size: 25px;
+  color: #fff;
+  background-image: url('../img/f_kaba1-2.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#haikei p{
+  text-align: center;
+}
+
+#contents {
+  width: 1200px;
+  margin: auto;
+  border: solid rgb(139, 136, 136);
+}
+h1 {
+  margin-left: 16px;
+}
+
+.btn a{
+  margin: 10px auto;
+  width: 200px;
+  height: 40px;
+  background: cadetblue;
+  box-shadow: 0 3px 0 rgba (0, 0, 0, .3);
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.btn a:hover{
+  /* transform: translate(3px);
+  opacity: 0.8; */
+  box-shadow: 0 1px 0 rgba(136, 136, 136, 1);
+  margin-inline-end: 12px auto 8px;
+}
+
+.huki{
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0;
+  color: #fff;
+  background: #000;
+  width: 1100px;
+  margin-left: 16px;
+  padding-left: 16px;
+  border-radius: 4px;
+}
+
+.huki :before{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-top: 15px solid #000;
+}
+.huki h2{
+  margin: 0;
+  padding: 0;
+}
+.syousai {
+  text-align: center;
+}
+h4 {
+  background: rgb(192, 188, 188);
+  padding: 15px 0;
+  border-left: solid black;
+  margin: 0 60px 0 16px;
+  font-size: 20px;
+}
+#kesiki {
+  padding-left: 90px;
+  padding-top: 30px;
+}
+/* #box {
+  display: flex;
+  width: 800px;
+  padding-top: 30px;
+  color: rgb(65, 71, 69);
+} */
+#box li {
+  list-style: none;
+  text-align: center;
+  width: 300px;
+  padding: 30px;
+  color: rgb(65, 62, 62);
+  display: inline-block;
+  margin-top: 30px;
+
+}
